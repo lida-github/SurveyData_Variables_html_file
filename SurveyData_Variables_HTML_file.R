@@ -9,7 +9,7 @@ setwd("...") # Set a working directory
 
 # Set general information ----
 
-dataset.citation <- '...' # Add citation information for a dataset to which a data file belongs (e.g.: Butkevičienė, Eglė; Bryer, Thomas; Jurkevičienė, Jurgita; Morkevičius, Vaidas; Valentinavičius, Vytautas, 2025, "ISSP 2022: Family and Changing Gender Roles V, Lithuania, May - July 2024", https://hdl.handle.net/21.12137/W2HMFW, Lithuanian Data Archive for SSH (LiDA), V3)
+dataset.citation <- '' # Add citation information for a dataset to which a data file belongs (e.g.: Butkevičienė, Eglė; Bryer, Thomas; Jurkevičienė, Jurgita; Morkevičius, Vaidas; Valentinavičius, Vytautas, 2025, "ISSP 2022: Family and Changing Gender Roles V, Lithuania, May - July 2024", https://hdl.handle.net/21.12137/W2HMFW, Lithuanian Data Archive for SSH (LiDA), V3)
 dataset.id.lida <- '' # Add LiDA ID of a dataset (e.g.: LiDA_SurveyData_0566)
 file.version <- '' # Add version of a data file (e.g.: v1.0)
 files.dir <- 'files/' # Directory where a data file is stored
@@ -49,4 +49,5 @@ html.file[2] <- paste0("<caption><b>Dataset</b>: ",dataset.citation,"<br/><br/><
 writeLines(html.file,paste0(files.dir,dataset.id.lida,"_Variables_",file.version,".html"))
 
 ## End ####
+
 
